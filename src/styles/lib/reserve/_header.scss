@@ -1,0 +1,57 @@
+.header {
+	padding: 70px 108px 288px 76px;
+	&-menu {
+		margin-bottom: 196px;
+		align-items: center;
+		&__nav {
+			display: block;
+			margin-bottom: 11px;
+			span
+			 {
+			 	position: relative;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background: #000;
+				display: inline-block;
+				&:after,
+				&:before {
+					content: '';
+					position: absolute;
+					display: inline-block;
+					width: 7px;
+					height: 7px;
+					background: #000;
+					border-radius: 50%;
+				}
+				&:before {
+					left: -14px;
+				}
+				&:after {
+					right: -13px;
+				}
+			}
+		}
+	}
+	&-title {
+		position: relative;
+		margin-bottom: 47px;
+		line-height: 98px;
+		.date-container {
+			position: absolute;
+			right: 86px;
+			bottom: 13px;
+			letter-spacing: 2px;
+		}
+	}
+	&-notice {
+		padding-left: 13px;
+		& .text {
+			letter-spacing: .3px;
+			&:first-child {
+				letter-spacing: .4px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

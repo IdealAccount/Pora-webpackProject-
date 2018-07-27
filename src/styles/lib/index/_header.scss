@@ -1,0 +1,25 @@
+.header {
+	padding: 70px 108px 288px 76px;
+	.menu {
+		margin-bottom: 181px;
+	}
+	&-title {
+		position: relative;
+		margin-bottom: 62px;
+		line-height: 98px;
+		letter-spacing: 3.3px;
+		.date-container {
+			position: absolute;
+			right: 89px;
+			bottom: 2px;
+			letter-spacing: .3px;
+		}
+	}
+	&-notice {
+		padding-left: 13px;
+		& .text:first-child {
+			letter-spacing: .4px;
+			margin-bottom: 30px;
+		}
+	}
+}

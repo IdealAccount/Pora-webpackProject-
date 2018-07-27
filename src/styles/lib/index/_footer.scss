@@ -1,0 +1,66 @@
+.footer {
+	position: relative;
+	&__menu {
+		&-caption {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 13px;
+			letter-spacing: .8px;
+		}
+		&-item {
+			margin-bottom: 5px;
+		}
+		&:nth-child(1) {
+			margin-right: 160px;
+		}
+		&:nth-child(2) {
+			margin-right: 142px;
+		}
+		& .text {
+			line-height: 20px;
+		}
+	}
+}
+.social-container {
+	position: absolute;
+	right: 65px;
+	top: 3%;
+	text-align: right;
+}
+.social-list {
+	display: flex;
+	margin-bottom: 76px;
+	&__item {
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		background: #e5b3fe;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+	&__link {
+		display: block;
+	}
+}
+.land-author {
+	font-size: 15px;
+	margin-right: 7px;
+	a {
+		margin-left: 2px;
+	}
+}
+.age-confines {
+	bottom: 5px;
+	left: 70px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 38px;
+	text-align: center;
+	color: red;
+	width: 38px;
+	padding: 0 3px 0 7px;
+	height: 38px;
+	border: 2px solid red;
+	border-radius: 50%;
+	position: absolute;
+}

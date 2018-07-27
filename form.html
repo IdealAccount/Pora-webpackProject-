@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+	<main class="wrapper form-style">
+<!--==============
+		 FORM STEP 1 
+		==============-->
+		<!-- is active -->
+			<div class="menu menu--first flex flex--jsb">
+	      <a href="/" class="logo">
+	      	<img src="<%= require('./src/img/logo-white.png') %>" alt="logo">
+	      </a>
+	      <a href="#" class="menu-nav">
+	        <span class="menu-nav__dot"></span>
+	      </a>
+	    </div>
+	    <!--
+		  ==========
+		  	step 1
+		  ==========
+		  -->
+	    <form id="form-one" class="form " action="" method="POST"><!-- is active -->
+	    	<div class="form-wrapper step-first is-active">
+	    		<div class="form__header">
+		    		<h1 class="form__title">Реально,<br>
+		    				Пора!
+		    		</h1>
+		    		<p class="form__text">Уверены в своих силах? Действуйте!</p>
+	    		</div>
+	    		<div class="form__wrap-input">
+	    			<input id="name" class="form__input" name="yourname" placeholder="Как вас зовут?">
+	    			<div class="error-box"></div>
+	    		</div>
+	    		<div class="form__wrap-input">
+	    			<input id="from" class="form__input" name="from" placeholder="Откуда вы?">
+	    			<div class="error-box"></div>
+	    		</div>
+	    		<div id="step-first" class="form__next">
+	    			<img class="form__next-arr" src="<%= require('./src/img/slide-arr.png') %>" alt="next">
+	    			<span class="form__next-complete">Готово</span>
+	    		</div>
+	    	</div>
+	    	<!--
+		  	==========
+		  		step 2
+		  	==========
+		  	-->
+	    	<div class="form-wrapper step-second">
+		  		<div class="form__header">
+		    		<h1 class="form__title">А что с<br>проектом?</h1>
+		    		<p class="form__text">Отлично, <span id="user">Константин!</span> Давайте ближе к делу.</p>
+	    		</div>
+	    		<div class="form__wrap-input"><input class="form__input" placeholder="Выберите номинацию"></div>
+	    		<div class="form__wrap-textarea">
+	    			<textarea class="form__textarea" placeholder="Опишите свой проект" maxlength=""></textarea>
+	    		</div>
+	    		<div id="step-second" class="form__next">
+	    			<img class="form__next-arr" src="<%= require('./src/img/slide-arr.png') %>" alt="next">
+	    			<span class="form__next-complete">Готово</span>
+	    		</div>
+		  	</div>
+		  	<!--
+		  	==========
+		  		step 2.2
+		  	==========
+		  	-->
+				<div class="form-wrapper step-second2">
+		    	<div class="form__header">
+			    	<h1 class="form__title">А что с<br>проектом?</h1>
+		    	</div>
+		    	<div class="form__flex-container">
+		    		<div class="form__flex-box disable">
+		    			<p class="form__text">Отлично, <span id="user">Константин!</span> Давайте ближе к делу.</p>
+				    	<div class="form__wrap-input">
+				    		<input class="form__input" placeholder="Выберите номинацию">
+				    	</div>
+				    	<div class="form__wrap-textarea">
+				    		<textarea class="form__textarea" placeholder="Опишите свой проект" maxlength=""></textarea>
+				    	</div>
+				    	<div id="step-second2" class="form__next">
+				    		<img class="form__next-arr" src="<%= require('./src/img/slide-arr.png') %>" alt="next">
+				    		<span class="form__next-complete">Готово</span>
+				    	</div>
+		    		</div>
+		    		<div class="form__flex-box">
+		    			<p class="form__radio-title">Куда подаемся?</p>
+		    			<div class="form__radio-group">
+		    				<input type="radio" id="radio1" name="radio" value="1">
+		    				<label for="radio1" class="form__radio">Социальная Инициатива - реализованные проекты</label>
+		    				<input type="radio" id="radio2" name="radio" value="2">
+		    				<label for="radio2" class="form__radio is-active">Социальная Инициатива – нереализованные проекты</label>
+		    				<input type="radio" id="radio3" name="radio" value="3">
+		    				<label for="radio3" class="form__radio">Социальная реклама и коммуникация - реализованные проекты</label>
+		    				<input type="radio" id="radio4" name="radio" value="4">
+		    				<label for="radio4" class="form__radio">Социальная реклама и коммуникация - нереализованные проекты</label>
+		    				<input type="radio" id="radio5" name="radio" value="5">
+		    				<label for="radio5" class="form__radio">Приз по итогам народного голосования на сайте фестиваля</label>
+		    				<input type="radio" id="radio6" name="radio" value="6">
+		    				<label for="radio6" class="form__radio">Гран-при – один среди всех категорий</label>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	<!--
+		  	==========
+		  		step 3
+		  	==========
+		  	-->
+				<div class="form-wrapper step-third">
+			  	<div class="form__header">
+			    	<h1 class="form__title">Уточним<br>детали</h1>
+			    	<p class="form__text">Звучит довольно интересно, может копнем глубже?</p>
+		    	</div>
+		    	<div class="form__wrap-input" tabindex="0">
+		    		<input class="form__input" placeholder="Ваш контактный телефон">
+		    	</div>
+		    	<div class="form__wrap-input">
+		    		<p class="form__question">Есть что показать?</p><!--TO DO: сменить класс -->
+		    		<p class="form__text form__text--small">Вы можете прикрепить файлы не более 25мб с расширениями:<br>
+							<span class="form__files-format">PDF, PNG, JPG, DOC. Просто перенесите нужные файлы в область ниже.</span>
+		    		</p>
+		    		<label class="form__upload-file" tabindex="0">
+		    			<input class="form__input-file" type="file" accept=".pdf,.png,.jpg,.doc" multiple name="upload-file" title="">
+		    			<div class="form__upload-icon">
+		    				<!-- <img class="form__upload-arr" src="<%= require('./src/img/upload-arr.png') %>" alt=""> -->
+		    			</div>
+		    		</label>
+		    	</div>
+		    	<div id="step-third" class="form__next">
+		    		<img class="form__next-arr" src="<%= require('./src/img/slide-arr.png') %>" alt="next">
+		    		<input class="form__next-send" type="submit" value="Отправить">
+		    	</div>
+		  	</div>
+		  </form>
+	    <footer class="footer flex flex--jsb">
+		    <div class="rules">
+			    	<a class="rules__link" href="" download="">
+			    		<span class="rules__text">Правила участия</span>
+			    		<img src="<%= require('./src/img/file.png') %>" alt="download-rules">
+			    	</a>
+			  </div>
+				<div class="pagination-column">
+					<div class="pagination-column__page">01</div>
+					<div class="pagination-column__page">02</div>
+					<div class="pagination-column__page">03</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

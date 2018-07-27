@@ -1,0 +1,156 @@
+body {
+	font-family: "Circe";
+	font-size: 16px;
+	line-height: 30px;
+	background: #fff;
+	height: 100%;
+	color: #000;
+	// overflow-x: hidden;
+	
+}
+h1,h2 {
+	font-size: 100px;
+	font-weight: bold;
+	line-height: 100px;
+	font-family: "Clother";
+}
+ul {
+	list-style: none;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+	background: #fff;
+	padding-bottom: 65px;
+	overflow: hidden;
+}
+.wrap {
+	max-width: 900px;
+}
+.wrap,
+.form {
+	width: 100%;
+	margin: 0 auto;
+}
+.section {
+	// height: 100vh;
+	position: relative;
+}
+.flex {
+	display: flex;
+	&--jc {
+		justify-content: center;
+	}
+	&--jsb {
+		justify-content: space-between;
+	}
+	&--jsa {
+		justify-content: space-around;
+	}
+}
+.menu {
+	margin-bottom: 124px;
+	align-items: center;
+	&-nav {
+		transform: translateX(20px);
+		padding: 0 20px;
+		display: block;
+		margin-top: -11px;
+		&__dot {
+		 	position: relative;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #fff;
+			display: inline-block;
+			&:after,
+			&:before {
+				content: '';
+				position: absolute;
+				width: 7px;
+				height: 7px;
+				background: #fff;
+				border-radius: 50%;
+			}
+			&:before {
+				left: -14px;
+			}
+			&:after {
+				right: -13px;
+			}
+			&--black,
+			&--black:before,
+			&--black:after {
+				background: #000;
+			}
+		}
+	}
+}
+.date-container {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	font-family: "Clother";
+}
+.text {
+	color: rgba(0,0,0,.6);
+	letter-spacing: .3px;
+}
+.text--bold {
+	font-weight: bold;
+	text-decoration: underline;
+}
+// RIGHT ACTION BAR
+.cont-right-fix {
+	position: absolute;
+	right: 0;
+	top: 23.6%;
+	z-index: 9;
+}
+.action-block {
+	background: #ff0000;
+	width: 241px;
+	height: 611px;
+	position: relative;
+	margin-bottom: 148px;
+}
+.sub-of-work {
+	cursor: pointer;
+	position: absolute;
+	color: #fff;
+	transform: rotate(90deg);
+	bottom: 218px;
+	font-size: 17px;
+	right: -8px;
+	&:after,
+	&:before {
+		content: '';
+		display: inline-block;
+	}
+	&:after {
+		background: #fff;
+		width: 34px;
+		height: 2px;
+		transform: translateX(23px);
+		vertical-align: middle;
+	}
+	&:before {
+		position: absolute;
+		right: -25px;
+		top: 50%;
+		border: solid #fff;
+		width: 7px;
+		height: 7px;
+		border-width: 2px 2px 0 0;
+		transform: rotate(45deg) translate(-50%,-20%);
+	}
+}
+.example-block {
+	width: 241px;
+	height: 137px;
+	background: #000;
+	margin-bottom: 31px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
